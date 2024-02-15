@@ -30,7 +30,13 @@ export default function CountryItem({
   return (
     <div onClick={onClickItem} className={style.container}>
       <div className={style.flag_img}>
-        <Image src={flagImg} alt="" fill />
+        <Image
+          src={flagImg}
+          alt=""
+          style={{ objectFit: "cover" }}
+          fill
+          sizes="(max-width: 320px)"
+        />
       </div>
       <div className={style.content}>
         <div className={style.name}>

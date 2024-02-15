@@ -6,7 +6,7 @@ import Image from "next/image";
 import Head from "next/head";
 
 type TProps = {
-  country: TCountryResponse;
+  country: TCountryResponse | null;
 };
 
 const Country = ({ country }: TProps) => {
@@ -54,7 +54,9 @@ const Country = ({ country }: TProps) => {
 
         <div className={style.flag_img}>
           <Image
+            style={{ objectFit: "cover" }}
             fill
+            sizes="(max-width: 320px)"
             src={country.flagImg}
             alt={`${country.commonName}의 국기 이미지입니다`}
           />
