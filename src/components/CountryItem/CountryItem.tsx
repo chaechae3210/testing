@@ -1,16 +1,9 @@
 import Image from "next/image";
 import style from "./CountryItem.module.css";
 import { useRouter } from "next/router";
+import { TSearchResultResponse } from "@/apis/api";
 
-type TProps = {
-  code: string;
-  commonName: string;
-  flagEmoji: string;
-  flagImg: string;
-  population: number;
-  region: string;
-  capital: string[];
-};
+type TProps = TSearchResultResponse;
 
 export default function CountryItem({
   code,
@@ -28,7 +21,7 @@ export default function CountryItem({
   };
 
   return (
-    <div onClick={onClickItem} className={style.container}>
+    <li onClick={onClickItem} className={style.container}>
       <div className={style.flag_img}>
         <Image
           src={flagImg}
@@ -46,6 +39,6 @@ export default function CountryItem({
         <div>수도 : {capital.join(", ")}</div>
         <div>인구 : {population}</div>
       </div>
-    </div>
+    </li>
   );
 }

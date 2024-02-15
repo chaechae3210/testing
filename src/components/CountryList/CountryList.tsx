@@ -8,10 +8,10 @@ type TProps = {
 
 export default function CountryList({ countries }: TProps) {
   return (
-    <div className={style.container}>
+    <ul className={style.container}>
       {countries.map((country: TSearchResultResponse) => (
         <CountryItem key={country.code} {...country} />
       ))}
-    </div>
+    </ul>
   );
 }
