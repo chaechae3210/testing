@@ -25,7 +25,7 @@ describe("CountryItem Component", () => {
     });
   });
 
-  it("renders country information correctly", () => {
+  it("CountryItem에 프롭스를 넘겼을 때 국가 정보가 올바르게 렌더링 됨.", () => {
     render(<CountryItem {...mockProps} />);
 
     expect(screen.getByText("🇰🇷 South Korea")).toBeInTheDocument();
@@ -34,12 +34,12 @@ describe("CountryItem Component", () => {
     expect(screen.getByText("인구 : 51780579")).toBeInTheDocument();
   });
 
-  it("navigates to the country detail page on click", async () => {
+  it("li를 클릭하면 국가 정보 디테일 페이지로 push됨", async () => {
     render(<CountryItem {...mockProps} />);
     const container = screen.getByRole("listitem");
     await userEvent.click(container);
 
-    expect(mockRouterPush).toHaveBeenCalledWith("/country/KOR");
+    expect(mockRouterPush).toHaveBeenCalledWith(`/country/${mockProps.code}`);
   });
 
   afterEach(() => {
