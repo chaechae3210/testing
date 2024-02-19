@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountryItem Component CountryItem 스냅샷 테스트 1`] = `
+<div>
+  <li
+    class="container"
+  >
+    <div
+      class="flag_img"
+    >
+      <img
+        alt=""
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="(max-width: 320px)"
+        src="/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=3840&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+      />
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="name"
+      >
+        🇰🇷
+         
+        South Korea
+      </div>
+      <div>
+        지역 : 
+        Asia
+      </div>
+      <div>
+        수도 : 
+        Seoul
+      </div>
+      <div>
+        인구 : 
+        51780579
+      </div>
+    </div>
+  </li>
+</div>
+`;
+
+exports[`CountryItem Component renders homepage unchanged 1`] = `
+<div>
+  <li
+    class="container"
+  >
+    <div
+      class="flag_img"
+    >
+      <img
+        alt=""
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="(max-width: 320px)"
+        src="/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=3840&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fkr.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+      />
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="name"
+      >
+        🇰🇷
+         
+        South Korea
+      </div>
+      <div>
+        지역 : 
+        Asia
+      </div>
+      <div>
+        수도 : 
+        Seoul
+      </div>
+      <div>
+        인구 : 
+        51780579
+      </div>
+    </div>
+  </li>
+</div>
+`;

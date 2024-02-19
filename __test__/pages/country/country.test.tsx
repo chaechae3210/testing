@@ -1,10 +1,8 @@
 import Country from "@/pages/country/[code]";
 import { render, screen } from "@testing-library/react";
-import { useRouter } from "next/router";
+import mockRouter from "next-router-mock";
 
-jest.mock("next/router", () => ({
-  useRouter: jest.fn(),
-}));
+jest.mock("next/router", () => jest.requireActual("next-router-mock"));
 
 const mockCountryData = {
   code: "KOR",
@@ -20,27 +18,21 @@ const mockCountryData = {
 
 describe("Country 컴포넌트", () => {
   it("isFallback이 true일 때 'Loading...' 메시지가 표시됨", () => {
-    (useRouter as jest.Mock).mockReturnValue({
-      isFallback: true,
-    });
+    mockRouter.isFallback = true;
 
     render(<Country country={null} />);
     expect(screen.getByText("Loading...")).toBeInTheDocument();
   });
 
   it("isFallback이 false이고 country가 null일 때 '존재하지 않는 국가입니다.' 메시지가 표시됨", () => {
-    (useRouter as jest.Mock).mockReturnValue({
-      isFallback: false,
-    });
+    mockRouter.isFallback = false;
 
     render(<Country country={null} />);
     expect(screen.getByText("존재하지 않는 국가입니다.")).toBeInTheDocument();
   });
 
   it("유효한 country prop이 제공될 때 국가 정보가 정확하게 표시됨", () => {
-    (useRouter as jest.Mock).mockReturnValue({
-      isFallback: false,
-    });
+    mockRouter.isFallback = false;
 
     render(<Country country={mockCountryData} />);
     expect(screen.getByText(mockCountryData.capital[0])).toBeInTheDocument();
