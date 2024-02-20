@@ -35,12 +35,14 @@ describe("CountryItem Component", () => {
 
   // li 클릭시 push가 호출되는지에 대한 기능 단위테스트
   it("li를 클릭하면 국가 정보 디테일 페이지로 push됨", async () => {
-    mockRouter.push("/");
-
     render(<CountryItem {...mockProps} />);
+    // 롤이 listitem인 요소를 변수 container에 할당
     const container = screen.getByRole("listitem");
+    // 유저가 container를 클릭했을 때(userEvent는 비동기적으로 실행되기 때문에 async await 필요)
     await userEvent.click(container);
 
+    // 클릭으로 인해 push(`/country/${mockProps.code}`) 가 실행되고
+    // useRouter.asPath의 값이 `/country/${mockProps.code}`과 동일할 것이라 기대
     expect(mockRouter.asPath).toEqual(`/country/${mockProps.code}`);
   });
 });
