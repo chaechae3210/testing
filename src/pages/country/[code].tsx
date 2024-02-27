@@ -33,7 +33,7 @@ const Country = ({ country }: TProps) => {
   return (
     <>
       <Head>
-        <title>{country.commonName} 국가 정보 조회 | NARAS</title>
+        <title>{`${country.commonName} 국가 정보 조회 | NARAS`}</title>
         <meta property="og:image" content={country.flagImg} />
         <meta
           property="og:title"
